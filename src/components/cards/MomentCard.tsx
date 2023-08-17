@@ -13,13 +13,13 @@ interface MomentCardProps {
     };
 }
 
-const MomentCard: React.FC<MomentCardProps> = ({ record }) => {
-    const { title, description } = record;
+const MomentCard: React.FC<MomentCardProps> = ({ data }) => {
+    const { Name, ChatGPTText } = data;
 
     return (
         <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
+            <h1>{Name}</h1>
+            <p>{ChatGPTText}</p>
         </div>
     );
 };

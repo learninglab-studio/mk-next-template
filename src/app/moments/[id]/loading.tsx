@@ -1,8 +1,9 @@
-export default function Page ({ params }: { params: { id: string } }) {
+"use client"
+
+export default function Loading () {
     return (
         <div>
             <h1>loading</h1>
-            <pre>the data for {{params.id}}</pre>
         </div>
     )
 }
